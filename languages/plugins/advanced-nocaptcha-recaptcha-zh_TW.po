@@ -1,0 +1,614 @@
+# Translation of Plugins - Advanced noCaptcha &amp; invisible Captcha (v2 &amp; v3) - Stable (latest release) in Chinese (Taiwan)
+# This file is distributed under the same license as the Plugins - Advanced noCaptcha &amp; invisible Captcha (v2 &amp; v3) - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-09-18 23:16:29+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: zh_TW\n"
+"Project-Id-Version: Plugins - Advanced noCaptcha &amp; invisible Captcha (v2 &amp; v3) - Stable (latest release)\n"
+
+#: admin/settings.php:117
+msgid "For \"Contact Form 7\" you need to follow <a target=\"_blank\" href=\"%1$s\">this instruction</a>. For other forms see <a href=\"%2$s\">this instruction</a>"
+msgstr "如果網站使用的是 Contact Form 7，請參考<a target=\"_blank\" href=\"%1$s\" target=\"_blank\">這份說明文件</a>；如果使用其他聯絡表單外掛，則請參考<a href=\"%2$s\">這份說明文件</a>。"
+
+#: admin/settings.php:261
+msgid "If any one is blocked in your country select other one."
+msgstr "如果網站伺服器所屬地區封鎖了其中一個，請選取另外一個。"
+
+#: admin/settings.php:252
+msgid "Recaptcha Domain"
+msgstr "reCAPTCHA 網域"
+
+#: admin/settings.php:249
+msgid "One per line"
+msgstr "每行一個項目"
+
+#: admin/settings.php:245
+msgid "Whitelisted IPs"
+msgstr "加入允許清單的 IP"
+
+#: admin/settings.php:242
+msgid "Higher means more sensitive"
+msgstr "越高的數值代表越靈敏。"
+
+#: admin/settings.php:236
+msgid "Captcha Score"
+msgstr "CAPTCHA 分數"
+
+#: admin/settings.php:233
+msgid "Loading in All Pages help google for analytics"
+msgstr "在全部頁面載入指令碼能協助 Google 進行分析。"
+
+#: admin/settings.php:231
+msgid "Form Pages"
+msgstr "表單頁面"
+
+#: admin/settings.php:230
+msgid "All Pages"
+msgstr "全部頁面"
+
+#: admin/settings.php:224
+msgid "v3 Script Load"
+msgstr "v3 指令碼載入位置"
+
+#: admin/settings.php:90
+msgid "Select your reCaptcha version. Make sure to use site key and secret key for your selected version."
+msgstr "請選取 reCAPTCHA 類型，並確認輸入的是所選類型對應的網站金鑰及密鑰。"
+
+#: admin/settings.php:88
+msgid "V3"
+msgstr "v3"
+
+#: admin/settings.php:87
+msgid "V2 Invisible"
+msgstr "v2: 隱形 reCAPTCHA 標記"
+
+#: admin/settings.php:86
+msgid "V2 \"I'm not a robot\""
+msgstr "v2:「我不是機器人」核取方塊"
+
+#: admin/settings.php:80
+msgid "Version"
+msgstr "reCAPTCHA 類型"
+
+#: admin/settings.php:60
+msgid "Get reCaptcha keys from <a href=\"%s\">Google</a>. Make sure to get keys for your selected captcha version."
+msgstr "請先前往 <a href=\"%s\">Google reCAPTCHA</a> 取得相關金鑰，並確認在下方輸入的金鑰與選取的 reCAPTCHA 類型相符。"
+
+#: admin/settings.php:539
+msgid "Support Development"
+msgstr "支援開發工作"
+
+#: anr-captcha-class.php:625
+msgid "Comment Submission Failure"
+msgstr "留言傳送失敗。"
+
+#. Description of the plugin
+msgid "Show noCaptcha or invisible captcha in Comment Form, bbPress, BuddyPress, WooCommerce, CF7, Login, Register, Lost Password, Reset Password. Also can implement in any other form easily."
+msgstr "在 bbPress、BuddyPress、WooCommerce、Contact Form 7、登入、註冊、忘記密碼、重設密碼、留言等表單中顯示 reCAPTCHA 或隱形 reCAPTCHA。這個外掛也非常容易整合至其他表單。"
+
+#: admin/settings.php:580
+msgid "Back to Settings"
+msgstr "返回外掛設定頁面"
+
+#: admin/settings.php:577
+msgid "For paid support pleasse visit <a href=\"%s\" target=\"_blank\">Advanced noCaptcha reCaptcha</a>"
+msgstr "如需付費技術支援，請造訪 <a href=\"%s\" target=\"_blank\">Advanced noCaptcha reCaptcha</a>。"
+
+#: admin/settings.php:576
+msgid "To verify use %s. It will return true on success otherwise false."
+msgstr "如需進行驗證，請使用 %s。這會在驗證成功時傳回 <code>true</code>，驗證失敗時傳回 <code>false</code>。"
+
+#: admin/settings.php:575
+msgid "To show noCaptcha in a form use %1$s OR %2$s"
+msgstr "如需在表單中顯示 noCAPTCHA，請使用 %1$s 或 %2$s。"
+
+#: admin/settings.php:569
+msgid "To show noCaptcha use %s"
+msgstr "如需顯示 noCAPTCHA，請使用 %s。"
+
+#: admin/settings.php:566
+msgid "Goto %s page of this plugin and set up as you need. and ENJOY..."
+msgstr "前往這個外掛的%s頁面依實際需求進行設定，之後外掛會處理其他項目。"
+
+#: admin/settings.php:565
+msgid "Get your site key and secret key from <a href=\"%s\" target=\"_blank\">GOOGLE</a> if you do not have already."
+msgstr "如果尚未取得網站金鑰及密鑰，請前往 <a href=\"%s\" target=\"_blank\">Google reCAPTCHA</a> 網站建立。"
+
+#: admin/settings.php:398
+msgid "No hook defined for %s"
+msgstr "%s 沒有已定義的勾點。"
+
+#: admin/settings.php:279
+msgid "No JS Captcha"
+msgstr "不需 JavaScript 的 reCAPTCHA 驗證"
+
+#: admin/settings.php:271
+msgid "Remove CSS"
+msgstr "移除 CSS"
+
+#: admin/settings.php:264
+msgid "Logged in Hide"
+msgstr "完成登入後隱藏"
+
+#: admin/settings.php:221
+msgid "Show login Captcha after how many failed attempts? 0 = show always"
+msgstr "請設定需要在多少次登入失敗後顯示 reCAPTCHA 驗證。設定為 0 代表永遠顯示。"
+
+#: admin/settings.php:215
+msgid "Failed login Captcha"
+msgstr "登入失敗後顯示 reCAPTCHA 驗證"
+
+#: admin/settings.php:125
+msgid "Captcha Language"
+msgstr "驗證機制介面語言"
+
+#: admin/settings.php:122
+msgid "Please solve Captcha correctly"
+msgstr "請正確解決驗證問題。"
+
+#: admin/settings.php:114
+msgid "BuddyPress register"
+msgstr "BuddyPress 註冊表單"
+
+#: admin/settings.php:101
+msgid "Enabled Forms"
+msgstr "啟用保護機制的表單"
+
+#: admin/settings.php:97
+msgid "Secret Key"
+msgstr "密鑰"
+
+#: admin/settings.php:67
+msgid "Other Settings"
+msgstr "其他設定"
+
+#: admin/settings.php:64
+msgid "Forms"
+msgstr "表單"
+
+#: admin/settings.php:58
+msgid "Google Keys"
+msgstr "Google 金鑰"
+
+#: anr-captcha-class.php:117
+msgid "ERROR"
+msgstr "錯誤"
+
+#. Author of the plugin
+msgid "Shamim Hasan"
+msgstr "Shamim Hasan"
+
+#: admin/anr-admin-class.php:186
+msgid "Show login Captcha after how many failed attempts"
+msgstr "請設定需要在多少次登入失敗後顯示 reCAPTCHA 驗證。"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.shamimsplugins.com/contact-us/"
+msgstr "https://www.shamimsplugins.com/contact-us/"
+
+#. Plugin Name of the plugin
+msgid "Advanced noCaptcha & invisible Captcha"
+msgstr "Advanced noCaptcha & invisible Captcha"
+
+#: admin/settings.php:212 admin/anr-admin-class.php:182
+msgid "Badge shows for invisible captcha"
+msgstr "隱形 reCAPTCHA 的服務徽章位置。"
+
+#: admin/settings.php:210 admin/anr-admin-class.php:179
+msgid "Inline"
+msgstr "內嵌至表單中"
+
+#: admin/settings.php:209 admin/anr-admin-class.php:178
+msgid "Bottom Left"
+msgstr "左下方"
+
+#: admin/settings.php:208 admin/anr-admin-class.php:177
+msgid "Bottom Right"
+msgstr "右下方"
+
+#: admin/settings.php:202 admin/anr-admin-class.php:175
+msgid "Badge"
+msgstr "服務徽章位置"
+
+#: admin/anr-admin-class.php:172
+msgid "For invisible captcha set this as Invisible. Make sure to use site key and secret key for invisible captcha"
+msgstr "請配合隱形 reCAPTCHA 設定為 [隱形]，並確認使用的是隱形 reCAPTCHA 的網站金鑰及密鑰。"
+
+#: admin/anr-admin-class.php:169
+msgid "Invisible"
+msgstr "隱形"
+
+#: admin/settings.php:198 admin/anr-admin-class.php:168
+msgid "Compact"
+msgstr "密集"
+
+#: admin/settings.php:197 admin/anr-admin-class.php:167
+msgid "Normal"
+msgstr "標準"
+
+#: admin/settings.php:187 admin/anr-admin-class.php:162
+msgid "Dark"
+msgstr "深色"
+
+#: admin/settings.php:186 admin/anr-admin-class.php:161
+msgid "Light"
+msgstr "淺色"
+
+#: admin/settings.php:464 admin/settings.php:470 admin/anr-admin-class.php:45
+msgid "Advanced noCaptcha & invisible captcha"
+msgstr "Advanced noCaptcha & invisible Captcha"
+
+#: admin/settings.php:464 admin/settings.php:470 admin/settings.php:495
+#: admin/anr-admin-class.php:45
+msgid "Advanced noCaptcha & invisible captcha Settings"
+msgstr "Advanced noCaptcha & invisible Captcha 設定"
+
+#: functions.php:26
+msgid "<strong>ERROR</strong>: "
+msgstr "<strong>錯誤</strong>: "
+
+#: admin/anr-admin-class.php:302
+msgid "To verify use "
+msgstr "如需進行驗證，請使用 "
+
+#: admin/anr-admin-class.php:301
+msgid "To show form field use "
+msgstr "如需顯示表單欄位，請使用短代碼 "
+
+#: admin/settings.php:574 admin/anr-admin-class.php:300
+msgid "If you want to implement noCaptcha in any other custom form"
+msgstr "在其他自訂表單中使用 noCAPTCHA"
+
+#: admin/settings.php:572 admin/anr-admin-class.php:298
+msgid "If Login Form, Registration Form, Lost Password Form, Reset Password Form is selected in SETTINGS page of this plugin they will show and verify Captcha in WooCommerce respective forms also."
+msgstr "如果已在這個外掛的設定頁面中選取登入表單、註冊表單、忘記密碼表單、重設密碼表單，則 WooCommerce 對應表單也會顯示及驗證 reCAPTCHA。"
+
+#: admin/settings.php:571 admin/anr-admin-class.php:297
+msgid "Implement noCaptcha in WooCommerce"
+msgstr "在 WooCommerce 中使用 noCAPTCHA"
+
+#: admin/anr-admin-class.php:295
+msgid "To show noCaptcha use "
+msgstr "如需顯示 noCAPTCHA，請使用 "
+
+#: admin/settings.php:568 admin/anr-admin-class.php:294
+msgid "Implement noCaptcha in Contact Form 7"
+msgstr "在 Contact Form 7 中使用 noCAPTCHA"
+
+#: admin/anr-admin-class.php:292
+msgid "Goto SETTINGS page of this plugin and set up as you need. and ENJOY..."
+msgstr "前往這個外掛的設定頁面依實際需求進行設定，之後外掛會處理其他項目。"
+
+#: admin/anr-admin-class.php:291
+msgid "Get your site key and secret key from <a href='%s' target='_blank'>GOOGLE</a> if you do not have already."
+msgstr "如果尚未取得網站金鑰及密鑰，請前往 <a href=\"%s\" target=\"_blank\">Google reCAPTCHA</a> 網站建立。"
+
+#: admin/settings.php:560 admin/anr-admin-class.php:289
+msgid "Advanced noCaptcha reCaptcha Setup Instruction"
+msgstr "進階 noCAPTCHA reCAPTCHA 設定指示"
+
+#: admin/anr-admin-class.php:255
+msgid "Sorry, your nonce did not verify!"
+msgstr "很抱歉，目前的一次性驗證碼尚未通過驗證！"
+
+#: admin/anr-admin-class.php:251
+msgid "No Permission!"
+msgstr "沒有權限！"
+
+#: admin/settings.php:523 admin/anr-admin-class.php:226
+msgid "Plugin Author"
+msgstr "外掛開發者"
+
+#: admin/anr-admin-class.php:213 admin/anr-admin-class.php:303
+msgid "For paid support pleasse visit <a href='%s' target='_blank'>Advanced noCaptcha reCaptcha</a>"
+msgstr "如需付費技術支援，請造訪 <a href=\"%s\" target=\"_blank\">Advanced noCaptcha reCaptcha</a>。"
+
+#: admin/anr-admin-class.php:210
+msgid "Save Options"
+msgstr "儲存設定"
+
+#: admin/settings.php:284 admin/anr-admin-class.php:209
+msgid "If JavaScript is a requirement for your site, we advise that you do NOT check this."
+msgstr "如果這個網站需要 JavaScript，建議<strong>不要啟用</strong>這項設定。"
+
+#: admin/settings.php:283 admin/anr-admin-class.php:209
+msgid "Show captcha if javascript disabled?"
+msgstr "啟用這項設定後，便能在瀏覽器停用 JavaScript 功能時，仍能顯示 reCAPTCHA 驗證"
+
+#: admin/settings.php:276 admin/anr-admin-class.php:208
+msgid "This css increase login page width to adjust with Captcha width."
+msgstr "這個外掛的 CSS 會以 reCAPTCHA 的寬度為準，調整加寬登入頁面的寬度。"
+
+#: admin/settings.php:275 admin/anr-admin-class.php:208
+msgid "Remove this plugin's css from login page?"
+msgstr "啟用這項設定後，便會在登入頁面移除這個外掛的 CSS"
+
+#: admin/settings.php:268 admin/anr-admin-class.php:207
+msgid "Hide Captcha for logged in users?"
+msgstr "啟用這項設定後，reCAPTCHA 驗證會在使用者完成登入後隱藏"
+
+#: admin/anr-admin-class.php:188
+msgid "Show Captcha on"
+msgstr "reCAPTCHA 顯示位置:"
+
+#: admin/settings.php:120 admin/anr-admin-class.php:185
+msgid "Error Message"
+msgstr "錯誤訊息"
+
+#: admin/settings.php:191 admin/anr-admin-class.php:165
+msgid "Size"
+msgstr "外觀尺寸"
+
+#: admin/settings.php:180 admin/anr-admin-class.php:159
+msgid "Theme"
+msgstr "外觀樣式"
+
+#: admin/anr-admin-class.php:150
+msgid "Language"
+msgstr "服務徽章語言"
+
+#: admin/anr-admin-class.php:148
+msgid "Secret key"
+msgstr "密鑰"
+
+#: admin/settings.php:93 admin/anr-admin-class.php:147
+msgid "Site Key"
+msgstr "網站金鑰"
+
+#: admin/anr-admin-class.php:145
+msgid "Value"
+msgstr "設定值"
+
+#: admin/anr-admin-class.php:145
+msgid "Setting"
+msgstr "設定"
+
+#: admin/anr-admin-class.php:141
+msgid "If you like this plugin please <a href='%s' target='_blank'>Review in Wordpress.org</a> and give 5 star"
+msgstr "如果喜歡這個外掛，請在 <a href='%s' target='_blank'>WordPress.org</a> 上給予 5 星評等。"
+
+#: admin/anr-admin-class.php:140
+msgid "Advanced noCaptcha reCaptcha Settings"
+msgstr "進階 noCAPTCHA reCAPTCHA 設定"
+
+#: admin/anr-admin-class.php:130
+msgid "Options successfully saved."
+msgstr "設定已儲存。"
+
+#: admin/settings.php:115 admin/anr-admin-class.php:120
+msgid "WooCommerce Checkout"
+msgstr "WooCommerce 結帳表單"
+
+#: admin/settings.php:113 admin/anr-admin-class.php:119
+msgid "bbPress reply to topic"
+msgstr "bbPress 回覆主題表單"
+
+#: admin/settings.php:112 admin/anr-admin-class.php:118
+msgid "bbPress New topic"
+msgstr "bbPress 發表新主題表單"
+
+#: admin/settings.php:111 admin/anr-admin-class.php:117
+msgid "Comment Form"
+msgstr "留言表單"
+
+#: admin/settings.php:110 admin/anr-admin-class.php:116
+msgid "Reset Password Form"
+msgstr "重設密碼表單"
+
+#: admin/settings.php:109 admin/anr-admin-class.php:115
+msgid "Lost Password Form"
+msgstr "忘記密碼表單"
+
+#: admin/settings.php:108 admin/anr-admin-class.php:114
+msgid "Multisite User Signup Form"
+msgstr "多站網路使用者註冊表單"
+
+#: admin/settings.php:107 admin/anr-admin-class.php:113
+msgid "Registration Form"
+msgstr "註冊表單"
+
+#: admin/settings.php:106 admin/anr-admin-class.php:112
+msgid "Login Form"
+msgstr "登入表單"
+
+#: admin/settings.php:176 admin/anr-admin-class.php:107
+msgid "Vietnamese"
+msgstr "越南文"
+
+#: admin/settings.php:175 admin/anr-admin-class.php:106
+msgid "Ukrainian"
+msgstr "烏克蘭文"
+
+#: admin/settings.php:174 admin/anr-admin-class.php:105
+msgid "Turkish"
+msgstr "土耳其文"
+
+#: admin/settings.php:173 admin/anr-admin-class.php:104
+msgid "Thai"
+msgstr "泰文"
+
+#: admin/settings.php:172 admin/anr-admin-class.php:103
+msgid "Swedish"
+msgstr "瑞典文"
+
+#: admin/settings.php:171 admin/anr-admin-class.php:102
+msgid "Spanish (Latin America)"
+msgstr "西班牙文 (拉丁美洲)"
+
+#: admin/settings.php:170 admin/anr-admin-class.php:101
+msgid "Spanish"
+msgstr "西班牙文"
+
+#: admin/settings.php:169 admin/anr-admin-class.php:100
+msgid "Slovenian"
+msgstr "斯洛維尼亞文"
+
+#: admin/settings.php:168 admin/anr-admin-class.php:99
+msgid "Slovak"
+msgstr "斯洛伐克文"
+
+#: admin/settings.php:167 admin/anr-admin-class.php:98
+msgid "Serbian"
+msgstr "塞爾維亞文"
+
+#: admin/settings.php:166 admin/anr-admin-class.php:97
+msgid "Russian"
+msgstr "俄文"
+
+#: admin/settings.php:165 admin/anr-admin-class.php:96
+msgid "Romanian"
+msgstr "羅馬尼亞文"
+
+#: admin/settings.php:164 admin/anr-admin-class.php:95
+msgid "Portuguese (Portugal)"
+msgstr "葡萄牙文 (葡萄牙)"
+
+#: admin/settings.php:163 admin/anr-admin-class.php:94
+msgid "Portuguese (Brazil)"
+msgstr "葡萄牙文 (巴西)"
+
+#: admin/settings.php:162 admin/anr-admin-class.php:93
+msgid "Portuguese"
+msgstr "葡萄牙文"
+
+#: admin/settings.php:161 admin/anr-admin-class.php:92
+msgid "Polish"
+msgstr "波蘭文"
+
+#: admin/settings.php:160 admin/anr-admin-class.php:91
+msgid "Persian"
+msgstr "波斯文"
+
+#: admin/settings.php:159 admin/anr-admin-class.php:90
+msgid "Norwegian"
+msgstr "挪威文"
+
+#: admin/settings.php:158 admin/anr-admin-class.php:89
+msgid "Lithuanian"
+msgstr "立陶宛文"
+
+#: admin/settings.php:157 admin/anr-admin-class.php:88
+msgid "Latvian"
+msgstr "拉脫維亞文"
+
+#: admin/settings.php:156 admin/anr-admin-class.php:87
+msgid "Korean"
+msgstr "韓文"
+
+#: admin/settings.php:155 admin/anr-admin-class.php:86
+msgid "Japanese"
+msgstr "日文"
+
+#: admin/settings.php:154 admin/anr-admin-class.php:85
+msgid "Italian"
+msgstr "義大利文"
+
+#: admin/settings.php:153 admin/anr-admin-class.php:84
+msgid "Indonesian"
+msgstr "印尼文"
+
+#: admin/settings.php:152 admin/anr-admin-class.php:83
+msgid "Hungarain"
+msgstr "匈牙利文"
+
+#: admin/settings.php:151 admin/anr-admin-class.php:82
+msgid "Hindi"
+msgstr "印度文"
+
+#: admin/settings.php:150 admin/anr-admin-class.php:81
+msgid "Hebrew"
+msgstr "希伯來文"
+
+#: admin/settings.php:149 admin/anr-admin-class.php:80
+msgid "Greek"
+msgstr "希臘文"
+
+#: admin/settings.php:148 admin/anr-admin-class.php:79
+msgid "German (Switzerland)"
+msgstr "德文 (瑞士)"
+
+#: admin/settings.php:147 admin/anr-admin-class.php:78
+msgid "German (Austria)"
+msgstr "德文 (奧地利)"
+
+#: admin/settings.php:146 admin/anr-admin-class.php:77
+msgid "German"
+msgstr "德文"
+
+#: admin/settings.php:145 admin/anr-admin-class.php:76
+msgid "French (Canadian)"
+msgstr "法文 (加拿大)"
+
+#: admin/settings.php:144 admin/anr-admin-class.php:75
+msgid "French"
+msgstr "法文"
+
+#: admin/settings.php:143 admin/anr-admin-class.php:74
+msgid "Finnish"
+msgstr "芬蘭文"
+
+#: admin/settings.php:142 admin/anr-admin-class.php:73
+msgid "Filipino"
+msgstr "菲律賓文"
+
+#: admin/settings.php:141 admin/anr-admin-class.php:72
+msgid "English (US)"
+msgstr "英文 (美國)"
+
+#: admin/settings.php:140 admin/anr-admin-class.php:71
+msgid "English (UK)"
+msgstr "英文 (英國)"
+
+#: admin/settings.php:139 admin/anr-admin-class.php:70
+msgid "Dutch"
+msgstr "荷蘭文"
+
+#: admin/settings.php:138 admin/anr-admin-class.php:69
+msgid "Danish"
+msgstr "丹麥文"
+
+#: admin/settings.php:137 admin/anr-admin-class.php:68
+msgid "Czech"
+msgstr "捷克文"
+
+#: admin/settings.php:136 admin/anr-admin-class.php:67
+msgid "Croatian"
+msgstr "克羅埃西亞文"
+
+#: admin/settings.php:135 admin/anr-admin-class.php:66
+msgid "Chinese (Traditional)"
+msgstr "中文 (繁體)"
+
+#: admin/settings.php:134 admin/anr-admin-class.php:65
+msgid "Chinese (Simplified)"
+msgstr "中文 (簡體)"
+
+#: admin/settings.php:133 admin/anr-admin-class.php:64
+msgid "Catalan"
+msgstr "加泰羅尼亞文"
+
+#: admin/settings.php:132 admin/anr-admin-class.php:63
+msgid "Bulgarian"
+msgstr "保加利亞文"
+
+#: admin/settings.php:131 admin/anr-admin-class.php:62
+msgid "Arabic"
+msgstr "阿拉伯文"
+
+#: admin/settings.php:130 admin/anr-admin-class.php:61
+msgid "Auto Detect"
+msgstr "自動偵測"
+
+#: admin/settings.php:465 admin/settings.php:471
+msgid "Instruction"
+msgstr "外掛說明"
+
+#: admin/settings.php:566 admin/settings.php:596 admin/anr-admin-class.php:314
+msgid "Settings"
+msgstr "設定"
