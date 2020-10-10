@@ -74,11 +74,12 @@
 
 							// print_r($menu_items);
 
-							
-							foreach( $menu_items as $menu ){
-								// print_r($menu);
+							/*
+							foreach( $menu_items as $menu ){								
 								echo '<li><a href="'.$menu->url.'">'.$menu->title.'</a></li>';
 							}
+							*/
+							
 							echo '<li><a href="'.home_url('/privacy-policy/').'">Privacy Policy</a></li>';							
 							echo '</ul>';
 
@@ -88,9 +89,24 @@
 
 				<div id="menu_sns">
 					<ul>
-							<li><a href="#" class="fb"></a></li>
-							<li><a href="#" class="tw"></a></li>
-							<li><a href="#" class="ig"></a></li>
+							<?php  
+								$optionfb = get_option('ddg_option_fb');
+								if($optionfb){
+							 ?>
+								<li><a href="<?php echo $optionfb; ?>" class="fb"></a></li>
+							<?php } ?>
+							<?php  
+								$optiontw = get_option('ddg_option_ttw');
+								if($optiontw){
+							 ?>
+								<li><a href="<?php echo $optiontw; ?>" class="tw"></a></li>
+							<?php } ?>	
+							<?php  
+								$optionig = get_option('ddg_option_ig');
+								if($optionig){
+							 ?>
+								<li><a href="<?php echo $optionig; ?>" class="ig"></a></li>
+							<?php } ?>	
 					</ul>
 				</div>
 			</div>

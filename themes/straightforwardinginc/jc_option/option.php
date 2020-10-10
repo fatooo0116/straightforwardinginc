@@ -20,11 +20,13 @@ function register_mysettings2() {
   //  register_setting( 'ruibian-settings-group', 'ddg_option_video' );
 
   //  register_setting( 'ruibian-settings-group', 'ddg_option_blog' );
-    register_setting( 'ruibian-settings-group', 'ddg_option_fb' );
-    register_setting( 'ruibian-settings-group', 'ddg_option_ttw' );
-    register_setting( 'ruibian-settings-group', 'ddg_option_line' );
-    register_setting( 'ruibian-settings-group', 'ddg_option_youtube' );
-    register_setting( 'ruibian-settings-group', 'ddg_option_linkedin' );
+
+    register_setting( 'ruibian-settings-group', 'ddg_option_fb' );  
+    register_setting( 'ruibian-settings-group', 'ddg_option_ttw' ); 
+    register_setting( 'ruibian-settings-group', 'ddg_option_ig' ); 
+    // register_setting( 'ruibian-settings-group', 'ddg_option_line' );
+    // register_setting( 'ruibian-settings-group', 'ddg_option_youtube' );
+    // register_setting( 'ruibian-settings-group', 'ddg_option_linkedin' );
 
     register_setting( 'ruibian-settings-group', 'ddg_header_logo');
     register_setting( 'ruibian-settings-group', 'ddg_header_jscode');
@@ -35,8 +37,7 @@ function register_mysettings2() {
 
     register_setting( 'ruibian-settings-group', 'ddg_header_hbanner');
 
-         register_setting( 'ruibian-settings-group', 'recap_v2_key');
-     register_setting( 'ruibian-settings-group', 'recap_v2_pass');
+
 }
 
 function ruibian_settings_page() {
@@ -130,24 +131,6 @@ function ruibian_settings_page() {
                                     </div>
                                 </div>
                                 <table class="form-table">
-                                    <tr valign="top"  style="display:none;">
-                                        <th scope="row">HomePage  Video</th>
-                                        <td>
-                                            <input type="text" name="ddg_option_video" id="sueprbanner" value="<?php echo esc_attr( get_option('ddg_option_video') ); ?>" />
-                                        </td>
-                                    </tr>
-
-                                    <tr valign="top"  style="display:none;">
-                                        <th scope="row">Blog</th>
-                                        <td>
-                                            <?php
-                                                $optionblog = get_option('ddg_option_blog');
-                                            ?>
-                                            <input  name="ddg_option_blog"  id="content_text"  ><?php echo $optionblog; ?></textarea>
-                                        </td>
-                                    </tr>
-
-
 
 
                                     <tr valign="top">
@@ -160,37 +143,31 @@ function ruibian_settings_page() {
                                         </td>
                                     </tr>
 
+
                                     <tr valign="top">
                                         <th scope="row">Twitter</th>
                                         <td>
                                             <?php
-                                                $optionig = get_option('ddg_option_ttw');
+                                                $optiontw = get_option('ddg_option_ttw');
                                             ?>
-                                            <input type="text"   name="ddg_option_ttw"    value="<?php echo $optionig; ?>"  >
+                                            <input type="text"   name="ddg_option_ttw"    value="<?php echo $optiontw; ?>"  >
                                         </td>
                                     </tr>
-
 
 
                                     <tr valign="top">
-                                        <th scope="row">Youtube</th>
+                                        <th scope="row">Instagram</th>
                                         <td>
                                             <?php
-                                                $optionyoutube = get_option('ddg_option_youtube');
+                                                $optionig = get_option('ddg_option_ig');
                                             ?>
-                                          <input  type="text"  name="ddg_option_youtube"   value="<?php echo $optionyoutube; ?>"  >
+                                            <input type="text"   name="ddg_option_ig"    value="<?php echo $optionig; ?>"  >
                                         </td>
-                                    </tr>
+                                    </tr>                                    
 
-                                    <tr valign="top">
-                                        <th scope="row">Linkedin</th>
-                                        <td>
-                                            <?php
-                                                $optionlinkedin = get_option('ddg_option_linkedin');
-                                            ?>
-                                            <input type="text"  name="ddg_option_linkedin"  value="<?php echo $optionlinkedin; ?>"   >
-                                        </td>
-                                    </tr>
+
+
+
 
 
                                     <tr valign="top"  class="uploader" >
@@ -265,26 +242,7 @@ function ruibian_settings_page() {
                                     </tr>
                                 </table>
 
-				                                <table class="form-table">
-                                    <tr valign="top">
-                                        <th scope="row">Comment Recaptcha key</th>
-                                        <td>
-                                            <?php
-                                                $recap_v2_key = get_option('recap_v2_key');
-                                            ?>
-                                            <input  type="text"  name="recap_v2_key"    value="<?php echo $recap_v2_key; ?>" >
-                                        </td>
-                                    </tr>    
-                                    <tr valign="top">
-                                        <th scope="row">Comment Recaptcha Pass</th>
-                                        <td>
-                                            <?php
-                                                $recap_v2_pass = get_option('recap_v2_pass');
-                                            ?>
-                                            <input  type="text"  name="recap_v2_pass"    value="<?php echo $recap_v2_pass; ?>" >
-                                        </td>
-                                    </tr>  
-                                </table>  
+		
 
 
                                 <?php submit_button(); ?>

@@ -19,13 +19,14 @@ get_header();
 				 the_archive_title( '<h1 class="page-title">', '</h1>' );
 				// the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
-				<h2>Get the updates from the market</h2>
-				<p>Ocean and air freight rates and trends; weekly trucking and customs news</p>
+				<h2>Available Positions</h2>
+				<p>With cloud-based allocation software, <br/>
+					we make shipping your cargo transparent, reliable, and affordable.</p>
 			</header><!-- # page-header -->
 
 
 			
-			<div id="hot_news">
+			<div id="hot_news" style="display:none;">
 				<h3>Hot news</h3>
 
 				<?php         
@@ -73,9 +74,9 @@ get_header();
 			<div id="main_list">
 				<div id="post_cat">
 					<div class="inner">
-						<a href="<?php echo home_url('/category/news/'); ?>">All</a>
+						<a href="<?php echo home_url('/job/'); ?>">All</a>
 						<?php  
-							$allcats = get_categories(); 
+							$allcats =  get_terms('job_type');; 
 							foreach($allcats as $cat){
 								?>
 									<a href="<?php echo get_term_link($cat->term_id); ?>" class="term_link ">
@@ -92,7 +93,7 @@ get_header();
 				<?php 
 
 					$args = array(
-						'post_type' => array('post'),
+						'post_type' => array('job'),
 						'post_status' => array(  'publish'),
 						'posts_per_page' => 10,
 						'ignore_sticky_posts' => true,
@@ -101,7 +102,7 @@ get_header();
 						'orderby' => 'date',
 						'tax_query' => array(
 							array(
-								'taxonomy' => 'category',
+								'taxonomy' => 'job_type',
 								'field' => 'id',
 								'operator' => 'IN',
 								'terms'    => array(get_queried_object()->term_id),
@@ -109,7 +110,6 @@ get_header();
 						)
 					);
 
-					// echo get_queried_object()->term_id;;
 
 					$the_query = new WP_Query($args); 
 					
@@ -121,7 +121,7 @@ get_header();
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post();
 
-						get_template_part( 'template-parts/content', 'postlist');
+						get_template_part( 'template-parts/content', 'postlist_job');
 
 					}
 

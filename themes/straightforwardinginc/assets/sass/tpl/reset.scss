@@ -649,6 +649,10 @@ input[type="text"], input[type="search"], input[type="email"], input[type="tel"]
 
 
 
+  .clearfix:after {  visibility:hidden;  display:block;  font-size:0;  content:" ";  clear:both;  height:0; } .clearfix {  zoom:1; }
+
+
+
 @media (min-width: 1024px){
 	.pum-container.pum-responsive.pum-responsive-tiny {
 		width: 35% !important;

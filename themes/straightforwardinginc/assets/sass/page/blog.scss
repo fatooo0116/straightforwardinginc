@@ -1,6 +1,9 @@
 .breadcrumb{
     padding-top:40px;
     padding-bottom: 20px;;
+    padding-left:15px;
+    padding-right:15px;
+
     max-width:1220px;
     margin:auto auto;
     color:#bfbfbf;
@@ -8,7 +11,8 @@
 
 #single_blog{
     display: flex;
-    max-width:1220px;
+    max-width:1250px;
+    padding:0 15px;
     margin:auto auto 100px;;
     justify-content: space-between;
 
