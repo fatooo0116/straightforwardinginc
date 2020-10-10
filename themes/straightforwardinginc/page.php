@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<main id="page_aloha" class="site-main"  style="min-height:1023px;">
+	<main id="page_aloha" class="site-main"  style="">
 
 		<?php
 		while ( have_posts() ) :

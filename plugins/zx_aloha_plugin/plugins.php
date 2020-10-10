@@ -33,3 +33,6 @@ include 'vc/leader_bottom.php';
  include 'vc/career_sec1.php';
  include 'vc/career_benefit.php';
  include 'vc/career_bottom.php';
+
+  /* Pom   */
+  include 'vc/pom_bottom.php';

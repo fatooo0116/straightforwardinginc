@@ -2367,4 +2367,22 @@ input[type="text"], input[type="search"], input[type="email"], input[type="tel"]
         letter-spacing: 1px;
         color: #454545; }
 
+#pom_bottom {
+  position: relative; }
+  #pom_bottom:after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 119px;
+    background: #d8f3f7;
+    z-index: -1; }
+  #pom_bottom .inner {
+    display: flex; }
+    #pom_bottom .inner .right img {
+      display: block;
+      margin-bottom: 50px;
+      max-width: 572px; }
+
 /*# sourceMappingURL=main.css.map */

@@ -72,6 +72,7 @@ function career_bottom_fun( $atts, $content = null ) {
 
     $content1 = rawurldecode( base64_decode($atts['content1'])); 
     $all_link = vc_build_link( $all_link);
+    
 
     ob_start();
     ?>
