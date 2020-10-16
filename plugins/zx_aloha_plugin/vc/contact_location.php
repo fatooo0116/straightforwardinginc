@@ -24,8 +24,7 @@ function contact_location(){
                     "holder" => "div",
                     "class" => "",
                     "heading" => __("Map Image", 'psky'),
-                    "param_name" => "rimg",
-                   
+                    "param_name" => "rimg",                   
                   ),  
                   
                 array(

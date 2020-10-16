@@ -17,7 +17,7 @@ include 'vc/privacy_section.php';
  include 'vc/contact_location.php';
  include 'vc/contact_form.php';
   include 'vc/contact_us_bottom.php';
-include 'vc/service_feature.php';
+
 
 /* Leader Bottom */
 include 'vc/leadership.php';
@@ -36,3 +36,8 @@ include 'vc/leader_bottom.php';
 
   /* Pom   */
   include 'vc/pom_bottom.php';
+
+  include 'vc/service_feature.php';
+  include 'vc/color_ribbon.php';
+  include 'vc/app_display.php';
+  include 'vc/book_system.php';

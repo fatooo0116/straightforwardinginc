@@ -187,12 +187,16 @@ function career_sec1_fun( $atts, $content = null ) {
 
     ob_start();
     ?>
-        <?php if($img1[0]){ ?>
+        <?php if($title1){ ?>
         <section id="career_sec1_layer1">
-            <div class="box_width inner">
-                <div class="pic">
-                    <img src="<?php  echo $img1[0]; ?>" />
-                </div>
+            <div class="box_width inner  <?php if(!$img1[0]){ echo "text_center"; } ?>">
+                
+                    <?php if($img1[0]){ ?>
+                        <div class="pic">
+                            <img src="<?php  echo $img1[0]; ?>" />
+                        </div>
+                    <?php } ?>
+                
                 <div class="text">
                     <h3><?php echo $title1; ?></h3>
                     <div class="content"><?php echo $content1; ?></div>
