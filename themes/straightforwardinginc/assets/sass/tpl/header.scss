@@ -504,8 +504,17 @@
 
 
 @media(max-width: 768px){
+
+    #main_menuv2 .top_inner #site-navigation .global_menu .menu-menu-1-container{
+        align-items: flex-start;
+    }
+
     .admin-bar #main_menuv2 #site-navigation .global_menu{
         margin-top:46px ! important;
+    }
+    #main_menuv2 .top_inner .site-branding a img {
+        max-width: 180px;
+        padding-top: 0px;
     }
 }
 

@@ -1,0 +1,62 @@
+#service_tkfeature{
+    > h3{
+        font-size:32px;
+        font-family: 'Seravek Medium Italic';
+        font-weight: normal;
+        letter-spacing: 1.6px;
+        color: #0d395a;
+        line-height: 40px;;   
+        text-align: center;
+        margin-bottom: 100px;;
+    }
+    > .inner{
+        display:flex;
+        max-width: 1330px;;
+        padding:0 15px;
+        margin:auto;
+        .service_item{
+            width: 33.333%;
+            padding:0 20px;
+            text-align: center;
+            margin-bottom: 30px;;
+            .pic{
+                img{
+                    margin: auto auto 40px;
+                    display:block;
+                    height:200px;
+                    width: auto;;
+                }
+            }
+            h3{
+                font-family: 'Seravek';
+                font-size: 20px;;
+                color:#195d8f;
+            }
+            .ccontent{
+                font-size:16px;
+                line-height: 20px;;
+                color:#454545;
+                letter-spacing: 0.8px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    #service_feature{
+        .inner{
+            .left{
+                width:100%;
+                margin-bottom: 30px;;
+            }
+            .right{
+                width:100%;
+                .sf_item1,
+                .sf_item2{
+                    padding:0 15px;
+                }
+            }
+        }
+    }
+}

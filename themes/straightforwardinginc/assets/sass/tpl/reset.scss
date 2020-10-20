@@ -80,7 +80,7 @@
 
 
 .box_width{
-    max-width:1230px;
+    max-width:1330px;
     padding-left:15px;
     padding-right:15px;
     margin-left:auto;
@@ -650,6 +650,18 @@ input[type="text"], input[type="search"], input[type="email"], input[type="tel"]
 
 
   .clearfix:after {  visibility:hidden;  display:block;  font-size:0;  content:" ";  clear:both;  height:0; } .clearfix {  zoom:1; }
+
+
+
+
+
+@media (max-width: 1450px){
+    .box_width{
+       //  max-width: 1230px;
+    }
+}
+
+
 
 
 

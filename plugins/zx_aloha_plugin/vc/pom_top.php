@@ -5,11 +5,11 @@ if (!defined('ABSPATH')) die('-1');
 
 
 
-function pom_bottom(){
+function pom_top(){
     vc_map(
         array(
-            'name'            => __('POM Bottom', 'psky'),
-            'base'            => 'pom_bottom',
+            'name'            => __('POM Top', 'psky'),
+            'base'            => 'pom_top',
             "category" => array('STRIGHT'),
             //  "icon" => plugins_url('../img/slider.png', __FILE__),
             /*
@@ -17,7 +17,18 @@ function pom_bottom(){
             'show_settings_on_create' => false,
             "js_view" => 'VcColumnView',
             */
-            "params" => array(              
+            "params" => array(   
+                
+                
+                array(
+                    "type" => "attach_image",
+                    "holder" => "div",
+                    "class" => "",
+                    "heading" => __("Background Image", 'psky'),
+                    "param_name" => "rimg",
+                    "admin_label" => true,
+                  ),  
+
 
                 array(
                     "type" => "textfield",
@@ -55,20 +66,13 @@ function pom_bottom(){
                     "admin_label" => true,
                 ),      
                 
-                array(
-                    "type" => "attach_image",
-                    "holder" => "div",
-                    "class" => "",
-                    "heading" => __("Right Image", 'psky'),
-                    "param_name" => "rimg",
-                    "admin_label" => true,
-                  ),   
+ 
                                                                
             )
         )
     );
 }
-add_action( 'vc_before_init', 'pom_bottom' );
+add_action( 'vc_before_init', 'pom_top' );
 
 
 
@@ -80,14 +84,15 @@ add_action( 'vc_before_init', 'pom_bottom' );
  *  ShortCode
  *
  * */
-function pom_bottom_fun( $atts, $content = null ) {
+function pom_top_fun( $atts, $content = null ) {
     extract( shortcode_atts( array(
         // 'button_text' => '',
+        'rimg'=>'',
         'title'=>'',
         'subtitle'=>'',
         'content1'=>'',
         'all_link' => '',
-        'rimg'=>''
+        
     ), $atts ) );
 
    
@@ -96,24 +101,20 @@ function pom_bottom_fun( $atts, $content = null ) {
 
     ob_start();
     ?>
-        <section  id="pom_bottom" class="">            
+        <section  id="pom_top" class="">     
+            <div class="bkimg" style="background-image:url(<?php echo $rimg[0]; ?>)"></div>       
             <div class="inner  contact_section  box_width">
-                <div class="left">
+
+                <div class="main_text">
                     <h3><?php echo $title; ?></h3>
                     <h4><?php echo $subtitle; ?></h4>
                     <div class="content">
                         <?php echo $content1; ?>
                     </div>
                     
-                    <a href="<?php echo $all_link['url']; ?>"  title="<?php echo $all_link['title']; ?>"   target="<?php echo $all_link['target']; ?>" class="button">Know More About App</a>
+                    <a href="<?php echo $all_link['url']; ?>"  title="<?php echo $all_link['title']; ?>"   target="<?php echo $all_link['target']; ?>" class="button">Discover Why SFI</a>
                 </div>
-                <div class="right">
-                    <?php 
-                        if($rimg[0]){
-                            echo '<img src="'.$rimg[0].'" />';
-                        }
-                    ?>
-                </div>
+
             </div>
         </section>
     <?php
@@ -122,4 +123,4 @@ function pom_bottom_fun( $atts, $content = null ) {
 
     return $output;
 }
-add_shortcode( 'pom_bottom', 'pom_bottom_fun' );
+add_shortcode( 'pom_top', 'pom_top_fun' );

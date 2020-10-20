@@ -35,9 +35,16 @@ include 'vc/leader_bottom.php';
  include 'vc/career_bottom.php';
 
   /* Pom   */
+  include 'vc/pom_top.php';
+  include 'vc/pom_center.php';
   include 'vc/pom_bottom.php';
 
   include 'vc/service_feature.php';
   include 'vc/color_ribbon.php';
   include 'vc/app_display.php';
   include 'vc/book_system.php';
+
+
+  /* tracking service */
+  include 'vc/service_tacking_center.php';
+  include 'vc/service_tacking_testi.php';

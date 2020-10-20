@@ -16,7 +16,7 @@ grunt.initConfig({
     },
     watch: {
         scripts: {
-          files: ['sass/style.scss','sass/*.scss','sass/tpl/*.scss','sass/page/*.scss','sass/vc/*.scss'],
+          files: ['sass/style.scss','sass/*.scss','sass/tpl/*.scss','sass/page/*.scss','sass/vc/*.scss','sass/lib/*.scss'],
           tasks: ['sass'],
           options: {
           //  event: ['added', 'deleted'],
