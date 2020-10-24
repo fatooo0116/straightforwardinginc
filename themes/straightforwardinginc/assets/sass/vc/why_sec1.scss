@@ -1,0 +1,57 @@
+#why_sec1{
+    background-image:url(../img/bg-wave.svg);
+    background-position: center bottom;
+    background-size: cover;
+    padding-bottom: 120px;;
+    position: relative;
+
+    .mask{
+        background-image:url(../img/pic-ship.svg);
+        background-position: center bottom;
+        background-size: 100% auto;
+        position: absolute;
+        width:100%;
+        height:100%;
+        z-index: -1;;
+    }
+
+
+    > h3{
+        font-family: 'Seravek Medium Italic';
+        font-weight: 500;
+        font-size: 32px;
+        color: #0d395a;
+        text-align: center;
+        margin-bottom: 75px;;
+    }
+    .inner{
+
+        padding:0 15px;
+        .video{
+           max-width: 900px;; 
+           margin:auto auto 70px;;
+           img{
+               display: block;
+               width: 100%;;
+           }
+        }
+        .text{
+            max-width: 900px;; 
+            margin:auto;
+            text-align: center;
+            h4{
+                font-family: 'Seravek Medium';
+                margin:0 0 10px;
+                font-size:20px;
+                font-weight: normal;
+                line-height: 24px;
+                color:#195d8f;
+            }
+            .content{
+                color:#454545;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}

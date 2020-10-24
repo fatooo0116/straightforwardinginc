@@ -1,0 +1,125 @@
+#home_sec3{
+
+    .inner{
+        display:flex;
+        max-width: 1330px;
+        margin:auto;;
+        padding-left:15px;
+        padding-right:15px;        
+        justify-content: space-between;
+
+        background-image:url(../img/bg-1.svg);
+        background-size:auto 100%;
+        background-position:right center;
+        background-repeat:no-repeat;
+
+        .left{
+            width:calc(50% - 20px);
+
+            > h3{
+                font-family: 'Seravek Medium Italic';
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 40px;;
+                color: #0d395a;                
+                margin-bottom: 20px;;   
+            }
+
+            > h4{
+                font-family: 'Seravek';
+                color:#0d395a;
+                font-size: 16px;;
+                letter-spacing: 0.8px;
+                line-height: 20px;;
+                margin-bottom: 20px;
+            }
+
+            .tab{
+                .header{
+                    ul{
+                        padding:0;
+                        display:flex;
+                        li{
+                            padding:0 15px 8px;
+                            border-bottom:1px solid #bfbfbf;                            
+                            list-style-type: none;
+                            transition: 0.3s;
+                            a{
+                                color:#bfbfbf;
+                            }
+                            &.active{
+                                opacity: 1;
+                                border-color:#0d395a;
+                                a{
+                                    color:#0d395a;                                   
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .item_content{
+                    display:none;
+
+                    h3{
+                        font-family: 'Seravek Medium';                       
+                        font-size: 20px;
+                        font-weight:normal;
+                        line-height: 24px;;
+                        color: #195d8f;
+                    }
+                    .content{
+                        font-size: 16px;
+                        line-height: 1.5em;
+                        margin-bottom: 50px;;
+                        color:#454545;                        
+                    }
+
+                    &.active{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .right{
+            width:calc(50% - 20px);
+            .image_slider{
+                .item{
+                    display:none;
+                    opacity: 0;
+                    &.active{
+                        display:block;
+                    }
+                    &.active.sh{
+                        opacity: 1;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+
+    > h1{
+        font-family: 'Seravek Medium Italic';
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 69px;;
+        color: #0d395a;
+        text-align: center;   
+        margin-bottom: 20px;;       
+    }
+
+    > h4{
+        font-size:18px;
+        line-height: 22px;
+        text-align: center;;
+        color:#454545;
+        letter-spacing: 1.35px;;
+        font-weight: 400;;
+        margin:30px 0 40px;
+    }
+
+    > .inner_bk{
+
+    }
+}

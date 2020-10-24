@@ -46,5 +46,23 @@ include 'vc/leader_bottom.php';
 
 
   /* tracking service */
+  // include 'vc/service_tacking_top.php';
   include 'vc/service_tacking_center.php';
+  include 'vc/service_tacking_bottom.php';
   include 'vc/service_tacking_testi.php';
+
+
+  /* Why */
+  include 'vc/why_sec1.php';
+  include 'vc/why_sec2.php';
+  include 'vc/why_sec3.php';
+  include 'vc/why_sec4.php';
+
+
+    /* Home */
+    include 'vc/home_sec1.php';
+    include 'vc/home_sec2.php';
+    include 'vc/home_sec3.php';
+    include 'vc/home_sec4.php';
+    include 'vc/home_sec5.php';
+    include 'vc/home_sec6.php';

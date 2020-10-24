@@ -1,68 +1,46 @@
 <?php
-
+/*   Home Sec4  */
 // don't load directly
 if (!defined('ABSPATH')) die('-1');
 
 
 
-function service_tracking_center(){
+function service_feature_center(){
     vc_map(
         array(
-            'name'            => __('Service Tracking Center', 'psky'),
-            'base'            => 'service_tracking_center',
+            'name'            => __('Service Main Features', 'psky'),
+            'base'            => 'service_feature_center',
             "category" => array('STRIGHT'),
+            'as_parent'               => array(
+                                            'only' => 'service_feature_center_item'                                          
+                                          ),
             //  "icon" => plugins_url('../img/slider.png', __FILE__),
             /*
             'content_element' => true,
             'show_settings_on_create' => false,
             "js_view" => 'VcColumnView',
             */
+            'content_element' => true,
+            'show_settings_on_create' => false,
+            "js_view" => 'VcColumnView',
             "params" => array(              
 
                 array(
                     "type" => "textfield",
+                    "holder" => "div",
                     "class" => "",
-                    "heading" => __( "Title", "my-text-domain" ),
-                    "param_name" => "title_top",
-                    "value" => __( "", "my-text-domain" ),
-                    "admin_label" => true,
-                ),  
-
-
-
-
-
-                array(
-                    "type" => "textfield",
-                    "class" => "",
-                    "heading" => __( "Title", "my-text-domain" ),
-                    "param_name" => "title1",
-                    "value" => __( "", "my-text-domain" ),
-                    "group" => "page1"
-                ), 
-                array(
-                    "type" => "textfield",
-                    "class" => "",
-                    "heading" => __( "Content", "my-text-domain" ),
-                    "param_name" => "content1",
-                    "value" => __( "", "my-text-domain" ),
-                    "group" => "page1"
-                ), 
-                array(
-                  "type" => "attach_image",
-                  "holder" => "div",
-                  "class" => "",
-                  "heading" => __("Image", 'psky'),
-                  "param_name" => "cimg1",
-                  "group" => "page1"
-                )  
-                              
-                                                               
+                    "heading" => __("Title"),
+                    "param_name" => "title",
+                    "admin_label" => true,                
+                ),    
+                    
+      
+                          
             )
         )
     );
 }
-add_action( 'vc_before_init', 'service_tracking_center' );
+add_action( 'vc_before_init', 'service_feature_center' );
 
 
 
@@ -74,72 +52,176 @@ add_action( 'vc_before_init', 'service_tracking_center' );
  *  ShortCode
  *
  * */
-function service_tracking_center_fun( $atts, $content = null ) {
-    extract( shortcode_atts( array(
-        // 'button_text' => '',
-        'title_top'=>'',
-       
-        'title1'=>'',
-        'content1' => '',        
-        'cimg1'=>'',
-
-        'title2'=>'',
-        'content2' => '',        
-        'cimg2'=>'',
-
-        'title3'=>'',
-        'content3' => '',        
-        'cimg3'=>'',
-
-        'title4'=>'',
-        'content4' => '',        
-        'cimg4'=>'',
-        
-        'title5'=>'',
-        'content5' => '',        
-        'cimg5'=>'', 
-
+function service_feature_center_fun( $atts, $content = null ) {
+    extract( shortcode_atts( array(          
+        'title' =>'', 
+        'cimg'=>''
+         
     ), $atts ) );
 
-   
-    $all_link = vc_build_link( $all_link);
-    $rimg = wp_get_attachment_image_src( $rimg, 'full');
+    // $contact = rawurldecode( base64_decode($atts['contact'])); 
+    // $ipc_bk_img = wp_get_attachment_image_src( $pc_bk_img, 'full');    
+    // $pic = wp_get_attachment_image_src( $bkimg, 'full');
+    // $pic  = wp_get_attachment_image( $bkimg, 'full');
+    // $pcimg  = wp_get_attachment_image( $pcimg, 'full');
+    // $btn_link = vc_build_link( $btn_link);
+    // $bkimg1 = wp_get_attachment_image_src( $bkimg1, 'full');    
+    // $xlink = vc_build_link( $xlink);
+    // $pic = wp_get_attachment_image_src( $bkimg, 'full');
+    // $picx = wp_get_attachment_image( $bkimg, 'full');
+    // $picmb = wp_get_attachment_image_src( $bkmbimg, 'full');
+    // $picmbx = wp_get_attachment_image( $bkmbimg, 'full');
+
+    
+    // $cimg = wp_get_attachment_image_src( $cimg, 'full');
 
     ob_start();
     ?>
-        <section  id="service_tracking_center" class="">     
-            <div class="header box_width">
-                <h3><?php echo $title; ?></h3>
-                <div class="subtitle"><?php echo $subtitle; ?></div>
-            </div>       
-            
-            <div class="inner    box_width">
-                    <div class="item">
-                        <h4><span><?php echo $b_title1; ?></span></h4>
-                        <div class="content">
-                            <?php echo $b_cont1; ?>
-                        </div>    
-                    </div>
 
-                    <div class="item">
-                        <h4><span><?php echo $b_title2; ?></span></h4>
-                        <div class="content">
-                        <?php echo $b_cont2; ?>
-                        </div>    
-                    </div>
-                    
-                    <div class="item">
-                        <h4><span><?php echo $b_title3; ?></span></h4>
-                        <div class="content">
-                        <?php echo $b_cont3; ?>
-                        </div>    
-                    </div>                    
-            </div>
-        </section>
+    <div id="service_feature_center"  >
+        <h3><?php   echo $title; ?></h3>
+                
+        <div class="inner box_width" >                        
+              <?php  echo do_shortcode($content);  ?>                                 
+      	</div>  
+    </div>
+
     <?php
     $output = ob_get_contents();
     ob_end_clean();
 
     return $output;
 }
-add_shortcode( 'service_tracking_center', 'service_tracking_center_fun' );
+add_shortcode( 'service_feature_center', 'service_feature_center_fun' );
+
+
+
+
+
+
+
+
+function service_feature_center_item(){
+  vc_map(
+      array(
+          'name'            => __('service_feature_center Item', ''),
+          'base'            => 'service_feature_center_item',
+        //  'description'     => __( '分隔區塊', 'eslite' ),
+          "category" => array('STRIGHT'),
+      //  "icon" => plugins_url('../img/slider.png', __FILE__),
+          'as_child'        => array('only' => 'service_feature_center'),
+          'content_element' => true,
+          'params'          => array(
+
+            array(
+             "type" => "textfield",
+              "holder" => "div",
+              "class" => "",
+              "heading" => __("Title", ''),
+              "param_name" => "title",
+             // "admin_label" => false,
+              "value" => array(''),
+              // "description" => __("Enter your content.", 'vc_extend')
+            ),
+
+            array(
+              "type" => "textarea", 
+              "holder" => "div",
+              "class" => "",
+              "heading" => __("content1", 'psky'),
+              "param_name" => "cname",
+              "admin_label" => false,
+              "value" => array(''),
+              // "description" => __("Enter your content.", 'vc_extend')
+            ),
+          
+            array(
+              "type" => "attach_image",
+              "holder" => "div",
+              "class" => "",
+              "heading" => __("Image", 'psky'),
+              "param_name" => "cimg",
+              "admin_label" => true,
+            )  
+
+          ),
+      )
+  );
+}
+add_action( 'vc_before_init', 'service_feature_center_item' );
+
+
+
+
+/**
+ *  Item ShortCode
+ *
+ */
+function service_feature_center_item_fun( $atts, $content = null ){
+  extract(
+      shortcode_atts(
+          array(                
+              'title'=>'',      
+              'cname'=>'',
+              'cimg'=>''
+          ), $atts
+      )
+  );
+
+  $cimg = wp_get_attachment_image_src( $cimg, 'full');
+ 
+  $href = vc_build_link( $mlink);
+  ob_start();
+  ?>
+
+      <div class="sf_item">
+        <div class="pic">
+              <?php if($cimg[0]){ ?>
+                <img src="<?php echo $cimg[0]; ?>" />
+              <?php } ?>
+        </div>
+          <div class="inner">                        
+              <div class="title">
+                <h3><?php echo $title; ?></h3>
+              </div>
+              <div class="content">
+                <?php echo $cname; ?>
+              </div>              
+          </div>
+      </div>
+
+  <?php
+  $output = ob_get_contents();
+  ob_end_clean();
+  return $output;
+
+}
+add_shortcode( 'service_feature_center_item', 'service_feature_center_item_fun' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// A must for container functionality, replace Wbc_Item with your base name from mapping for parent container
+if(class_exists('WPBakeryShortCodesContainer')){
+  class WPBakeryShortCode_service_feature_center extends WPBakeryShortCodesContainer {
+  }
+}
+
+// Replace Wbc_Inner_Item with your base name from mapping for nested element
+if(class_exists('WPBakeryShortCode')){
+  class WPBakeryShortCode_service_feature_center_item extends WPBakeryShortCode {
+
+  }
+}

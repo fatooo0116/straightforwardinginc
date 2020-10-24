@@ -18,6 +18,19 @@
     $(document).ready(function(){
 
 
+        $('.owl-carousel').owlCarousel({
+            items:4,
+            loop:false,
+           // loop:true,
+            center:true,
+            nav:true,
+            margin:10,
+            URLhashListener:true,
+            autoplayHoverPause:true,
+            startPosition: 'URLHash'
+        });
+
+
             $(".filters button").on("click",function(){
                 let filter = $(this).attr("data-filter");
                 console.log(filter);
@@ -37,7 +50,12 @@
                     });
                 }
             });
+        
 
+            $("#why_sec4 .left .slider").slick({
+                dots: true,
+                infinite: false,
+            });
 
 
             $("#service_tracking_testi > .inner > .xslider").slick({
@@ -113,6 +131,61 @@
                        $(this).removeClass("jcHover");
                    });
             }
+
+
+            $("#home_sec3 .inner .left .tab .header ul li a").on("click",function(e){
+                e.preventDefault();
+                let idx = $(this).parent().index();
+
+                $(this).parent().addClass('active');
+                $(this).parent().siblings().removeClass('active').removeClass('sh');
+
+                $("#home_sec3 .tab .item_content").eq(idx).addClass('active').siblings().removeClass('active');
+
+                $("#home_sec3 .image_slider .item").eq(idx).addClass('active').siblings().removeClass('active').removeClass('sh');
+
+                setTimeout(function(){
+                    $("#home_sec3 .image_slider .item").eq(idx).addClass('sh')
+                 },200);
+            });
+
+
+
+
+            let img_slider = $("#service_page_feature  .inner .right .img_slider").slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                // infinite: false,
+                responsive: [     
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                  ]
+            });
+
+            
+
+            let text_slider = $("#service_page_feature  .inner .left .text_slider").slick({
+                fade: true,                
+            });
+
+            
+            // console.log('start');
+
+            text_slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+                img_slider.slick('slickGoTo',nextSlide);
+              });
+           // img_slider.slick('slickPrev');
+           // img_slider.slick('slickNext');
+
+           $(".js-modal-btn").modalVideo();
 
     });
 })(jQuery);

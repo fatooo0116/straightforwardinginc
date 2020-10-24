@@ -4,10 +4,77 @@
 #page_top .inner .right img{
    //  max-height: 300px;
    width: auto;
-   max-height: 430px;
+   max-height: 490px;
    margin: auto;
    display: block;
 }
+
+
+
+#page_top{
+    .bkimg{
+        // background-size:cover;
+        height:100%;
+        width:100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 1;
+        background-position: left top ;
+        background-size: 100% auto;   
+        background-repeat: no-repeat;
+        overflow: hidden;
+             
+        /*
+        &:after{
+            content: '';
+            position: absolute;
+            width: 130%;
+            height: 0;
+            padding-bottom: 500px;
+            bottom: -200px;
+            transform: rotate(-10deg);
+            z-index: 1;
+            background: #fff;
+        }
+        */
+    }
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        min-height: 700px;    
+        max-width: 1400px;;
+
+            .left{
+                padding-top:130px;
+                h3{
+                    font-size:56px;
+                    line-height: 69px;
+                    color:#195d8f;
+                    font-family: 'Seravek Medium Italic';
+                    font-weight:normal;
+                    margin: 0 0 26px;
+                }
+                .content{
+                    font-size:18px;
+                    line-height: 22px;;
+                    letter-spacing: 1.35px;
+                    color:#195d8f;
+                    font-family: 'Seravek Light';
+                    max-width: 700px;
+                }
+            }
+            .right{
+                padding-top:100px;
+                img{
+                   // width:100%;
+                }
+            }
+   
+    }
+}
+
+
+
 
 
 @media (max-width: 767px) {

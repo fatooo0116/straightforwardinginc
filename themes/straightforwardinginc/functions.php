@@ -208,10 +208,21 @@ add_action( 'widgets_init', 'straightforwardinginc_widgets_init' );
  */
 function straightforwardinginc_scripts() {
 
-
+	$ver = rand(10,990000);
 		// wp_enqueue_style( 'bluextrade-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'bluextrade-style', get_template_directory_uri().'/assets/dist/css/main.css',array(),rand(10,990000),'all');
-	wp_enqueue_script( 'bluextrade-script', get_template_directory_uri() . '/assets/dist/js/script.js', array('jquery'), rand(10,9900021), true );
+	wp_enqueue_style( 'bluextrade-style', get_template_directory_uri().'/assets/dist/css/main.css',array(),$ver,'all');
+
+
+	wp_enqueue_style( 'strf-owl-css', get_template_directory_uri().'/assets/dist/js/owl/assets/owl.carousel.min.css',array(),$ver,'all');
+	wp_enqueue_style( 'strf-owl-css2', get_template_directory_uri().'/assets/dist/js/owl/assets/owl.theme.default.min.css',array(),$ver,'all');
+	
+	wp_enqueue_style( 'modal-video-css', get_template_directory_uri().'/assets/dist/js/modal-video/css/modal-video.min.css',array(),$ver,'all');
+	wp_enqueue_script( 'modal-video-js', get_template_directory_uri() . '/assets/dist/js/modal-video/js/jquery-modal-video.min.js', array('jquery'), $ver, true );
+
+
+	wp_enqueue_script( 'strf-owl-js', get_template_directory_uri() . '/assets/dist/js/owl/owl.carousel.min.js', array('jquery'), $ver, true );
+
+	wp_enqueue_script( 'bluextrade-script', get_template_directory_uri() . '/assets/dist/js/script.js', array('jquery','strf-owl-js','modal-video-js'), $ver, true );
 	
 
 	// wp_enqueue_style( 'straightforwardinginc-style', get_stylesheet_uri(), array(), _S_VERSION );

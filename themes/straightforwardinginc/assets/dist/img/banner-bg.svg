@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="886" height="705" viewBox="0 0 886 705">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_1628" fill="#fff" stroke="#707070" d="M0 0H886V705H0z" data-name="Rectangle 1628" transform="translate(344 801)"/>
+        </clipPath>
+        <style>
+            .cls-4{fill:#00c1d5}
+        </style>
+    </defs>
+    <g id="banner-bg" clip-path="url(#clip-path)" transform="translate(-344 -801)">
+        <g id="Group_1235" data-name="Group 1235" opacity="0.085" transform="matrix(-.998 .07 -.07 -.998 1066.832 1453.403)">
+            <path id="Path_30" d="M975.07 359.5H639.542s-39.1 4.412-90.822-27.118S0 0 0 0z" class="cls-4" data-name="Path 30" transform="translate(0 268.054)"/>
+            <path id="Path_31" d="M402.394 403.662L0 258.586 853.985 0 267.429 290.134s-16.667 6.02-3.483 15.453c13.254 9.45 138.448 98.075 138.448 98.075z" class="cls-4" data-name="Path 31" transform="translate(10.719)"/>
+        </g>
+    </g>
+</svg>

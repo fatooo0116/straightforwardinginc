@@ -1,0 +1,96 @@
+#home_sec6{
+    margin-bottom: 100px;;
+    z-index: 3;
+    
+    padding-top:300px;
+   
+    
+    .top_section{
+        margin: auto auto -100px;;
+        top:0;
+        width:100%;
+        height:417px;
+        text-align: center;
+        position: absolute;;
+        
+        .inner{
+            background-size:cover;
+            background-repeat: no-repeat;           
+            margin:auto;
+            max-width: 1300px;;
+            height:417px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            padding:0 100px;
+            box-sizing: border-box;;
+            .text_area{
+                max-width:418px;
+
+                h3{
+                    font-size:32px;
+                    line-height: 40px;
+                    letter-spacing: 1.6px;
+                    color:#0d395a;
+                    font-weight:500;
+                    font-family: 'Seravek Medium Italic';         
+                    color: #0d395a;               
+                    margin-bottom: 29px                
+                }
+
+                h4{
+                    font-size:20px;
+                }
+
+                .content1{
+                    font-size:16px;
+                    line-height: 20px;
+                    color:#454545;
+                    letter-spacing: 0.8px;
+                    color:#454545;
+                    margin-bottom: 29px;                    
+                }                
+            }
+        }
+    }
+
+    .bottom_section{    
+        box-sizing: border-box;
+        color:#fff;
+        padding-top:180px;
+        background:#00c1d5;
+        height:409px;
+        width:100%;
+        text-align: center;
+        h4{
+            font-family: 'Seravek Medium Italic';   
+            margin:auto auto 30px;;
+            font-size:32px;
+            font-weight:normal;
+            line-height: 40px;;
+            letter-spacing: 1.6px;;
+        }
+        .content2{
+            position: relative;
+            &:before{
+                left:-50px;
+                font-size:68px;
+                content:'"';
+                position: absolute;
+                font-family: 'Seravek Medium Italic';
+            }
+            &:after{
+                top:0;
+                right:-50px;
+                font-size:68px;
+                content:'"';
+                position: absolute;
+                font-family: 'Seravek Medium Italic';
+            }
+            max-width: 750px;;
+            margin:auto;
+            line-height: 1.7em;;
+            font-size:16px;
+        }
+    }
+}

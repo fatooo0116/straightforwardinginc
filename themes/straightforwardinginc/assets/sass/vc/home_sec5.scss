@@ -1,0 +1,41 @@
+#home_sec5{
+    margin-bottom: 100px;;
+   .inner{
+       text-align: center;
+       h3{
+        font-size:32px;
+        line-height: 40px;
+        letter-spacing: 1.6px;
+        color:#0d395a;
+        font-weight:500;
+        font-family: 'Seravek Medium Italic';         
+        color: #0d395a;               
+        margin-bottom: 29px   
+       }
+       h4{
+        font-family: 'Seravek Medium';
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 1px;;
+        color:#195d8f;
+       }
+
+       .content1{
+        font-size:16px;
+        line-height: 20px;
+        color:#454545;
+        letter-spacing: 0.8px;
+        color:#454545;
+        margin-bottom: 29px   
+       }
+
+       .pic{
+           max-width: 886px;
+           margin:auto auto 40px;;
+           img{
+               display: block;
+               width:100%;
+           }
+       }
+   }
+}

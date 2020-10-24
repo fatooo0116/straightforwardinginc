@@ -1,0 +1,46 @@
+#home_sec4{
+   .inner{
+       display: flex;
+       margin:auto;
+       max-width: 1300px;;
+       justify-content: space-between;
+
+       .left{
+           width:calc(60% - 20px);;
+           padding-top:100px;
+           img{
+               display: block;
+               width: 100%;;
+           }
+       }
+       .right{
+        width:calc(40% - 20px);;
+           h3{
+            font-size:32px;
+            line-height: 40px;
+            letter-spacing: 1.6px;
+            color:#0d395a;
+            font-weight:500;
+            font-family: 'Seravek Medium Italic';         
+            color: #0d395a;               
+            margin-bottom: 29px   
+           }
+           h4{
+            font-family: 'Seravek Medium';
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 1px;;
+            color:#195d8f;
+           }
+    
+           .content1{
+            font-size:16px;
+            line-height: 20px;
+            color:#454545;
+            letter-spacing: 0.8px;
+            color:#454545;
+            margin-bottom:50px;
+           }
+       }
+   }
+}
